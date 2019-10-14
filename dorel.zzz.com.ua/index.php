@@ -50,21 +50,30 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header"><h3>Комментарии</h3></div>
-
                             <div class="card-body">
                               <div class="alert alert-success" role="alert">
                                 Комментарий успешно добавлен
-                              </div>
-                                <?php $user[0] = ["username"=>"John Doe", "date"=>"12/10/2025", "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
-                                <?php $user[1] = ["username"=>"John Doe", "date"=>"12/10/2025", "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
-                                <?php foreach ($user as $value) {?>
+                                <?php $user[0] = ["username"=>"John Doe",
+                                                  "date"=>"12/10/2025",
+                                                  "post"=>"Lorem ipsum dolor sit amet,
+                                                           consectetur adipisicing elit.
+                                                           Saepe aspernatur, ullam doloremque deleniti,
+                                                           sequi obcaecati."]; ?>
+                                <?php $user[1] = ["username"=>"John Doe",
+                                                   "date"=>"12/10/2025",
+                                                   "post"=>"Lorem ipsum dolor sit amet,
+                                                            consectetur adipisicing elit.
+                                                            Saepe aspernatur, ullam doloremque deleniti,
+                                                            sequi obcaecati."]; ?>
+                                </div>
                                 <div class="media">
+<?php foreach ($user as $value) {?>
                                   <img src="img/no-user.jpg" class="mr-3" alt="..." width="64" height="64">
                                   <div class="media-body">
                                     <h5 class="mt-0"><?php echo $user[0]['username'];?></h5>
                                     <span><small><?php echo $user[0]['date'];?></small></span>
                                     <p>
-                                        <?php echo $user[0]['post'];}?>
+                                        <?php echo $user[0]['post'];}'<br>'?>
                                     </p>
                                   </div>
                                 </div>
