@@ -79,7 +79,7 @@
                     <div class="col-md-12" style="margin-top: 20px;">
                         <div class="card">
                             <div class="card-header"><h3>Оставить комментарий</h3></div>
-
+                            <?php require_once ("connect_db.php");?>
                             <div class="card-body">
                                 <form action="/store" method="post">
                                     <div class="form-group">
