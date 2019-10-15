@@ -55,28 +55,23 @@
                                 Комментарий успешно добавлен
                                 <?php $user[0] = ["username"=>"John Doe",
                                                   "date"=>"12/10/2025",
-                                                  "post"=>"Lorem ipsum dolor sit amet,
-                                                           consectetur adipisicing elit.
-                                                           Saepe aspernatur, ullam doloremque deleniti,
-                                                           sequi obcaecati."]; ?>
+                                                  "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
                                 <?php $user[1] = ["username"=>"John Doe",
-                                                   "date"=>"12/10/2025",
-                                                   "post"=>"Lorem ipsum dolor sit amet,
-                                                            consectetur adipisicing elit.
-                                                            Saepe aspernatur, ullam doloremque deleniti,
-                                                            sequi obcaecati."]; ?>
+                                                  "date"=>"12/10/2025",
+                                                  "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
                                 </div>
+                                <?php foreach ($user as $value) {?>
                                 <div class="media">
-<?php foreach ($user as $value) {?>
                                   <img src="img/no-user.jpg" class="mr-3" alt="..." width="64" height="64">
                                   <div class="media-body">
                                     <h5 class="mt-0"><?php echo $user[0]['username'];?></h5>
                                     <span><small><?php echo $user[0]['date'];?></small></span>
                                     <p>
-                                        <?php echo $user[0]['post'];}'<br>'?>
+                                        <?php echo $user[0]['post'];?>
                                     </p>
                                   </div>
                                 </div>
+                              <?php }?>
                             </div>
                         </div>
                     </div>
