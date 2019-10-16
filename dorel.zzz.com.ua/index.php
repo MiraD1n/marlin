@@ -79,9 +79,8 @@
                     <div class="col-md-12" style="margin-top: 20px;">
                         <div class="card">
                             <div class="card-header"><h3>Оставить комментарий</h3></div>
-                            <?php require_once ("connect_db.php");?>
                             <div class="card-body">
-                                <form action="/store" method="post">
+                                <form action="add_comment_to_db.php" method="post">
                                     <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Имя</label>
                                     <input name="name" class="form-control" id="exampleFormControlTextarea1" />
