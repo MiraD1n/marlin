@@ -1,5 +1,9 @@
 <?php
   require_once('connect_db.php');
   $username = $_POST['name'];
-  $query = "INSERT INTO `coments` (`id`, `username`, `date`, `post`) VALUES (NULL, '' 123, NULL); "
+  $date = date("Y-m-j");
+  echo $date;
+  $text = $_POST['text'];
+  $query = "INSERT INTO `coments` (`id`, `username`, `date`, `post`) VALUES (NULL, '$username', '$date', '$text')";
+  $insert = $pdo->query($query);
 ?>
