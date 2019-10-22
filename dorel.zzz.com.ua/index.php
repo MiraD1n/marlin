@@ -59,8 +59,14 @@
                                 <?php $user[1] = ["username"=>"John VAn Dan",
                                                   "date"=>"12/10/2025",
                                                   "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
+                                <?php
+                                 require_once('connect_db.php');
+                                 $query = "SELECT * FROM coments";
+                                 $com = $pdo->query($query);
+                                 $com_all = $com->fetchAll();
+                                ?>
                                 </div>
-                                <?php foreach ($user as $value) {?>
+                                <?php foreach ($com_all as $value) {?>
                                 <div class="media">
                                   <img src="img/no-user.jpg" class="mr-3" alt="..." width="64" height="64">
                                   <div class="media-body">
