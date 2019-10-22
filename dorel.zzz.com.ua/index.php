@@ -53,13 +53,13 @@
                             <div class="card-body">
                               <div class="alert alert-success" role="alert">
                                 Комментарий успешно добавлен
+                              </div>
                                 <?php
                                  require_once('connect_db.php');
                                  $query = "SELECT * FROM coments";
                                  $com = $pdo->query($query);
                                  $com_all = $com->fetchAll();
                                 ?>
-                                </div>
                                 <?php foreach ($com_all as $value) {?>
                                 <div class="media">
                                   <img src="img/no-user.jpg" class="mr-3" alt="..." width="64" height="64">
