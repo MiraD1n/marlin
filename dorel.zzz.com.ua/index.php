@@ -53,12 +53,6 @@
                             <div class="card-body">
                               <div class="alert alert-success" role="alert">
                                 Комментарий успешно добавлен
-                                <?php $user[0] = ["username"=>"John Doe",
-                                                  "date"=>"12/10/2025",
-                                                  "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
-                                <?php $user[1] = ["username"=>"John VAn Dan",
-                                                  "date"=>"12/10/2025",
-                                                  "post"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, ullam doloremque deleniti, sequi obcaecati."]; ?>
                                 <?php
                                  require_once('connect_db.php');
                                  $query = "SELECT * FROM coments";
